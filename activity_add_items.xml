@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItems">
+
+    <TextView
+        android:id="@+id/itemno"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="97dp"
+        android:text="Please select the item number :"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/itemname"
+        app:layout_constraintEnd_toEndOf="@+id/itemadd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemadd" />
+
+    <Spinner
+        android:id="@+id/spin_num"
+        android:layout_width="111dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemno" />
+
+    <TextView
+        android:id="@+id/itemname"
+        android:layout_width="317dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="27dp"
+        android:text="Please specify the name of the item :"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/nameofitem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemno" />
+
+    <TextView
+        android:id="@+id/itemprice"
+        android:layout_width="310dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="24dp"
+        android:text="Please specify the price of the item :"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/priceofitem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameofitem" />
+
+    <TextView
+        android:id="@+id/itemadd"
+        android:layout_width="249dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="26dp"
+        android:gravity="center"
+        android:text="Item Addition"
+        android:textColor="@color/purple_700"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/itemno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameofitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="Name of item"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/itemprice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemname" />
+
+    <EditText
+        android:id="@+id/priceofitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="228dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemprice" />
+
+    <Button
+        android:id="@+id/addtoshop"
+        android:layout_width="159dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="120dp"
+        android:text="Add to Shop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceofitem"
+        app:layout_constraintVertical_bias="0.788" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="109dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="64dp"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

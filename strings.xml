@@ -1,0 +1,47 @@
+<resources>
+
+    <string name="app_name">Login123</string>
+    <string-array name="businesstypes">
+        <item>Groceries</item>
+        <item>Flowers</item>
+        <item>Food Truck</item>
+    </string-array>
+
+    <string-array name="grocerysubtypes">
+        <item>Vegetables</item>
+        <item>Fruits</item>
+        <item>Leafy_Vegetables</item>
+    </string-array>
+
+    <string-array name="foodsubtypes">
+        <item>Chaats</item>
+        <item>Dosa</item>
+        <item>Coconut_Water</item>
+    </string-array>
+
+    <string-array name="flowersubtypes">
+        <item>Flower</item>
+    </string-array>
+
+
+    <string-array name="number">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
